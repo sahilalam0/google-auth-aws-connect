@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "clear && node index.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-connect": "*",
+    "@aws-sdk/credential-providers": "^3.554.0",
+    "dotenv": "^16.4.5",
+    "googleapis": "^134.0.0",
+    "open": "^8.0.0",
+    "server-destroy": "^1.0.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
