@@ -34,7 +34,7 @@ This project implements a way to authenticate to a Google Project and generate t
 
 ### Using the Credentials
 
-Use the generated credentials (Access Key ID and Secret Access Key) to authenticate your softphone application to your Amazon Connect instance. Refer to the AWS documentation for specific instructions on how to configure your softphone with the credentials.
+Use the generated credentials (Access Key ID and Secret Access Key) to authenticate your softphone application to your Amazon Connect instance. You can also refer to this example : https://github.com/jagadeeshaby/login-flows/blob/main/public/auth-signin-iframed.html
 
 ### Important Notes
 
@@ -42,8 +42,3 @@ Use the generated credentials (Access Key ID and Secret Access Key) to authentic
 * Keep your `.env` file secure as it contains sensitive information. Consider using environment variable management tools for production environments.
 
 This project provides a basic example of Google authentication for generating AWS Connect credentials. You may need to modify it based on your specific requirements and security best practices.
-
-### Next Steps
-
-We can use the generated credentials to authenticate to connect softphone as shown in the below example : 
-https://github.com/jagadeeshaby/login-flows/blob/main/public/auth-signin-iframed.html
