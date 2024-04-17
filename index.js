@@ -40,7 +40,7 @@ async function authenticate() {
                 res.end('Authentication successful! Please return to the console.');
                 server.destroy();
                 const {tokens} = await oauth2Client.getToken(qs.get('code'));
-                oauth2Client.credentials = tokens; // eslint-disable-line require-atomic-updates
+                oauth2Client.credentials = tokens;
                 resolve(oauth2Client);
             }
             } catch (e) {
@@ -71,12 +71,12 @@ const generateAWSCreds = async (webIdentityToken) => {
         InstanceId: process.env.INSTANCE_ID,
     });
     const response = await client.send(command);
-    const c = {
+    const connectCredentials = {
         ...response.Credentials,
         AccessTokenExpiration:response.Credentials.AccessTokenExpiration.getTime(),
         RefreshTokenExpiration:response.Credentials.RefreshTokenExpiration.getTime(),
     };
-    console.log(JSON.stringify(c)); 
+    console.log(JSON.stringify(connectCredentials)); 
 };
 
 authenticate().then((client)=>generateAWSCreds(client.credentials.id_token));
