@@ -4,7 +4,7 @@
     "start": "clear && node index.js"
   },
   "dependencies": {
-    "@aws-sdk/client-connect": "*",
+    "@aws-sdk/client-connect": "^3.556.0",
     "@aws-sdk/credential-providers": "^3.554.0",
     "dotenv": "^16.4.5",
     "googleapis": "^134.0.0",
