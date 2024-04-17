@@ -5,6 +5,7 @@ This project implements a way to authenticate to a Google Project and generate t
 ### Prerequisites
 
 * Node.js and npm installed (https://nodejs.org/en/download)
+* 'http://localhost:3000/oauth2callback' should be added as redirect uri in google oauth config
 
 ### Installation
 
